@@ -17,14 +17,12 @@ function Movie({ movie },{key}) {
 
                         <Col  key={key} md={4}>
                             <Card className='div-card'>
-                                <Card.Img className='div-card-img' variant="top" src={''} />
+                                <Card.Img className='div-card-img' variant="top" src={` `} />
                                 <Card.Body>
                                     <Card.Title className='div-card-title'>{movie.title}</Card.Title>
-                                    movie overview : {movie.overview}
-                                    <br></br>
-                                    { }
-                                    release_date : {movie.release_date}
-                                    <br></br>
+                                    <Card.Text >movie overview : {movie.overview}</Card.Text>
+                                    <Card.Text >release_date : {movie.release_date}</Card.Text>
+
                                     <div>
                                         <Button className='div-card-button' variant="primary" onClick={()=>{
                                                 setMovieInfo(movie)
